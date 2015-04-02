@@ -2,13 +2,18 @@
 
 ## Info
 Plataforma: iOS
+
 Linguagem utilizada: Swift (um pouquinho de Objective-C)
+
 Data: 01 de abril de 2015
+
 Local: mobLee
+
 Participantes: ~25
 
 ## Katas resolvidos
 FizzBuzz
+
 Tennis
 
 ## Retrospectiva
