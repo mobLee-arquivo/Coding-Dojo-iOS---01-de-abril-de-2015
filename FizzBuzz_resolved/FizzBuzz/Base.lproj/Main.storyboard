@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FizzBuzz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YWL-d8-FsY">
+                                <rect key="frame" x="16" y="20" width="489" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jP-Y5-mjE">
+                                <rect key="frame" x="513" y="19" width="71" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="mtv-Bj-q6N"/>
+                                </constraints>
+                                <state key="normal" title="Gerar lista">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="generateListButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aan-m1-Z4f"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIK-cD-B3I">
+                                <rect key="frame" x="16" y="58" width="568" height="522"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AIK-cD-B3I" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="19s-t3-koH"/>
+                            <constraint firstItem="YWL-d8-FsY" firstAttribute="baseline" secondItem="0jP-Y5-mjE" secondAttribute="firstBaseline" id="5ly-ls-evO"/>
+                            <constraint firstItem="AIK-cD-B3I" firstAttribute="trailing" secondItem="0jP-Y5-mjE" secondAttribute="trailing" id="EP1-vs-5vU"/>
+                            <constraint firstItem="AIK-cD-B3I" firstAttribute="leading" secondItem="YWL-d8-FsY" secondAttribute="leading" id="OaK-T4-huF"/>
+                            <constraint firstItem="0jP-Y5-mjE" firstAttribute="leading" secondItem="YWL-d8-FsY" secondAttribute="trailing" constant="8" symbolic="YES" id="WXx-G6-2Wf"/>
+                            <constraint firstItem="AIK-cD-B3I" firstAttribute="top" secondItem="0jP-Y5-mjE" secondAttribute="bottom" constant="9" id="bOQ-rV-SRW"/>
+                            <constraint firstItem="YWL-d8-FsY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="vGC-1E-nxS"/>
+                            <constraint firstItem="0jP-Y5-mjE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="19" id="xvQ-8G-fgW"/>
+                            <constraint firstAttribute="bottom" secondItem="AIK-cD-B3I" secondAttribute="bottom" constant="20" symbolic="YES" id="yVJ-cC-8Mf"/>
+                            <constraint firstItem="AIK-cD-B3I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yVo-pC-8Cr"/>
+                            <constraint firstItem="0jP-Y5-mjE" firstAttribute="baseline" secondItem="YWL-d8-FsY" secondAttribute="baseline" id="zUq-j3-Uww"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="listLabel" destination="AIK-cD-B3I" id="Guq-bB-toN"/>
+                        <outlet property="textField" destination="YWL-d8-FsY" id="abt-mp-0qP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
